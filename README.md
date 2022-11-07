@@ -7,5 +7,5 @@ de udemy.
 ## Progreso
 Secciones     | Completadas
 ------------- | -------------
- 1-23         | Completadas
+1-23          | Completadas
 24- ?         | en progreso
