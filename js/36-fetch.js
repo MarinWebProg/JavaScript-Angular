@@ -20,7 +20,11 @@ var div_profe = document.querySelector("#profesor");
     .then(data => data.json())
     .then (user => { 
         mostrarJanet(user.data);
-    });
+    })
+    .catch(error => {
+        // 
+        alert("Error en las peticiones")
+    }); //Para capturar los errores de la promesa
 
 function getUsuarios(){
 return fetch('https://reqres.in/api/users')
