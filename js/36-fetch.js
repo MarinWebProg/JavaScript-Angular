@@ -2,17 +2,25 @@
 //Fetch(ajax) y peticiones a servicios /apis rest
 var div_usuarios = document.querySelector("#usuarios");
 var div_janet = document.querySelector("#janet");
+var div_profe = document.querySelector("#profesor");
+
 
     getUsuarios()
+
     .then(data => data.json())
     .then(users => {
         listadoUsuarios(users.data);
+        return getInfo();
+    })
+    .then(data => {
+        div_profe.innerHTML = data;
+
         return getJanet();
     })
     .then(data => data.json())
     .then (user => { 
         mostrarJanet(user.data);
-    })
+    });
 
 function getUsuarios(){
 return fetch('https://reqres.in/api/users')
@@ -20,7 +28,28 @@ return fetch('https://reqres.in/api/users')
 
 function getJanet(){
 return fetch('https://reqres.in/api/users/2')
-}    
+} 
+
+function getInfo(){
+        var profesor = {
+            nombre : "John",
+            apellidos : "Doe",
+            url : "johndoe.com"
+        };
+
+        return new Promise((resolve,reject) => {
+            var profesor_string = "";
+
+            setTimeout(function(){
+                profesor_string = JSON.stringify(profesor);
+                if (typeof profesor_string != "string" || profesor_string =='') return reject("error 1");
+
+            return resolve(profesor_string);
+            },3000);
+
+            
+        });    
+}
 
 function listadoUsuarios (usuarios) {
         usuarios.map((user, i) => {
@@ -37,6 +66,7 @@ function listadoUsuarios (usuarios) {
         });
         
 }
+
 function mostrarJanet (user) {
 
     console.log(user);
