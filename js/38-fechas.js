@@ -11,3 +11,8 @@ var textoHora = `
     La hora es ${hora}
 `;
 console.log(textoHora);
+
+//Matematicas
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+console.log(Math.random()*10);
