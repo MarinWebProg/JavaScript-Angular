@@ -1,5 +1,6 @@
 'use strict'
 var formulario = document.querySelector("#formpeliculas");
+//yo
 
 formulario.addEventListener('submit', function(){
     console.log("entra");
