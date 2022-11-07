@@ -6,14 +6,23 @@
 
     <!-- JQUERY -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
-    <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            console.log("Si se instalo")
-        });
-    </script>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/01-selectores.js"></script>
+
+    <style>
+        .zebra{
+            border: 5px dashed black;
+        }
+        .grande{
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>Jquery</h1>
+    <p id="rojo" class="sin_borde"> Ejercicios con Jquery</p>
+    <p id="amarillo" class="zebra">Practicando con selectores</p>
+    <p id="verde" >Parrafo verde</p>
+    <p class="zebra">Soy un parrafo</p>
 </body>
 </html>
