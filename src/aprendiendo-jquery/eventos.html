@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+
+    <!-- JQUERY -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/02-eventos.js"></script>
+
+    <style>
+        #caja{
+            width: 250px;
+            height: 205px;
+            border: 2px solid black;
+            background: yellow;
+            transition: 300ms all;
+
+        }
+        /* #caja:hover{
+            background: red;
+            cursor: pointer;
+        } */
+        input{
+            padding: 20px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>EVENTOS JS</h1>
+
+    <div id="caja"> Soy una caja</div>
+    <hr>
+
+    <form>
+        <input type="text" id="nombre">
+    </form>
+    <br>
+    <div id="datos"></div>
+    
+</body>
+</html>

@@ -8,4 +8,5 @@ de udemy.
 Secciones     | Completadas
 ------------- | -------------
 1-23          | Completadas
-24- ?         | en progreso
+24-26         | Completadas
+27-??         | en progreso
