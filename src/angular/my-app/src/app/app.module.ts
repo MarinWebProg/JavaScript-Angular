@@ -3,10 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { VideojuegoComponent } from './videojuego/videojuego.component';
+import { zapatillasComponent } from './zapatillas/zapatillas.component';
+import { CursosComponent } from './cursos/cursos.component';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+    VideojuegoComponent,
+      zapatillasComponent,
+      CursosComponent
+   ],
   imports: [
     BrowserModule
   ],
