@@ -9,7 +9,7 @@ export class CursosComponent implements OnInit {
 
   constructor() { }
 
-  //nicializado todas las propiedades vinculadas a datos de una directiva. Defina un ngOnInit()método para manejar cualquier tarea de inicialización adicional.
+  //inicializado todas las propiedades vinculadas a datos de una directiva. Defina un ngOnInit()método para manejar cualquier tarea de inicialización adicional.
   ngOnInit() {
   }
 
