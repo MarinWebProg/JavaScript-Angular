@@ -15,4 +15,5 @@ Secciones     | Completadas
 ## TypeScript - Angular
 Secciones     | Completadas
 ------------- | -------------
-38 -          | En progreso
+38 - 44       | Completo --TypeScript
+45 - ??       | En progreso
