@@ -4,9 +4,15 @@
 Curso de Máster en JavaScript
 de udemy.
 *Puede ir cambiando donde me quede*
-## Progreso
+## Progreso JS
 Secciones     | Completadas
 ------------- | -------------
 1-23          | Completadas
 24-26         | Completadas
 27-??         | en progreso
+
+
+## TypeScript - Angular
+Secciones     | Completadas
+------------- | -------------
+38 -          | En progreso
