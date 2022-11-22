@@ -11,7 +11,7 @@ Secciones     | Completadas
 1-23          | Completadas
 24-26         | Completadas
 27-33         | Completadas
-34-??         | En progreso
+34-37         | En progreso
 
 
 ## TypeScript - Angular
