@@ -6,9 +6,6 @@
 
     <!-- Estilos CSS  -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
-    <link id="theme" rel="stylesheet" href="css/red.css" type="text/css">
-    <link id="theme" rel="stylesheet" href="css/blue.css" type="text/css">
     <link id="theme" rel="stylesheet" href="css/green.css" type="text/css">
     
     <!-- Slider -->
@@ -45,7 +42,7 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Reloj</a></li>
-                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
@@ -68,18 +65,18 @@
             </div>
 
             <sidebar id="sidebar">
-                <div id="">
+                <div id="about">
                     <h4><span>¿Quien sos?</span></h4>
                     <img src="img/caracol.jpg">
-
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
 
                 <div id="login">
                     <h4><span>Quien sos? en login</span></h4>
-                    <form action="">
+                    <form>
                         <label for="name"> Nombre:</label>
-                        <input type="text" name="name"/>
+                        <input type="text" name="name" id="form_name"/>
 
                         <label for="email"> Correo:</label>
                         <input type="email" name="email"/>
@@ -100,6 +97,8 @@
     <!-- Footer -->
     <footer>
         MASTER DE JS OH YEAH!!!!! &copy;
+
+        <a href="#" class="subir">Pa' arriba</a>
     </footer>
 
 </body>
