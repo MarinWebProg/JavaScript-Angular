@@ -2,19 +2,18 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<title>Proyecto con JavaScript</title>
+		<title>Proyecto</title>
 
 		<!-- Estilos CSS -->
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css" />
-		<link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.min.css" />
-		<link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css" />
-		<script type="text/javascript" src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
-
+	
+		<!-- Moment -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
 
 		<!-- Mis Scripts -->
 		<script type="text/javascript" src="js/main.js"></script>
@@ -31,7 +30,7 @@
 			<!-- Cabecera -->
 			<header>
 				<div id="logo">
-					<h1>Proyecto</h1>
+					<h1>Proyecto JS</h1>
 				</div>
 
 				<div class="clearfix"></div>
@@ -51,40 +50,20 @@
 			<section id="content">
 
 				<div id="box">
-					<!-- Cargar acordeon -->
-					<h2>Sobre mi</h2>
-					<br>
-					<div id="acordeon">
-						<h3>¿Quienes somos?</h3>
-						<div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo.
-							</p>
-						</div>
-						<h3>Servicios</h3>
-						<div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo.
-							</p>
-						</div>
-						<h3>Clientes</h3>
-						<div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo.
-							</p>
-						</div>
-					</div>
+					<!-- Cargar reloj -->
+					<div id="reloj"></div>
+				
 				</div>
 
 				<aside id="sidebar">
 					<div id="about">
-						<h4><span>Quien sos?</span></h4>
+						<h4><span>¿Quien soy?</span></h4>
 						<img src="img/caracol.jpg" />
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo.</p>
 					</div>
 
 					<div id="login">
-						<h4><span>Quien sos? en login</span></h4>
+						<h4><span>Identificate</span></h4>
 						<form>
 							<label for="name">
 								Nombre
