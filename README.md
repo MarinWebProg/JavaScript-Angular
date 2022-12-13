@@ -12,10 +12,11 @@ Secciones     | Completadas
 24-26         | Completadas
 27-33         | Completadas
 34-37         | Completado
--- Finalizado --
+# -------- Finalizado --------
 
 ## TypeScript - Angular
 Secciones     | Completadas
 ------------- | -------------
-38 - 44       | Completo --TypeScript
-45 - ??       | En progreso
+38 - 44       | Completo -- TypeScript
+45 - 47       | Completo -- Inicio Angular
+48 - ??       | En progreso
