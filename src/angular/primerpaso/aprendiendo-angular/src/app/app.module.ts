@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser'; //Se encargan los dos
 import { AppComponent } from './app.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
+import { CursosComponent } from './cursos/cursos.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [		//Es el apartado que carga los componentes(IMPORTANTE!!! -- siempre subir el componente creado)
     AppComponent,
       VideojuegoComponent,
-      ZapatillasComponent
+      ZapatillasComponent,
+      CursosComponent
    ],
   imports: [
     BrowserModule

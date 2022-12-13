@@ -1,5 +1,13 @@
 <div>
   <h1>Bienvenido al {{title}}!! </h1>
 
-  <videojuego></videojuego>
+  <h2>{{descripcion}}</h2>
+
+  <button (click)="ocultarJuegos(false)" *ngIf="mostrar_juegos">Oculto eoe</button>
+  <button (click)="ocultarJuegos(true)" *ngIf="!mostrar_juegos">NO Oculto eoe</button>
+
+  <videojuego *ngIf="mostrar_juegos"></videojuego> <!--Aqui esta mi primer componente creado-->
+  <zapatillas></zapatillas>
+  <cursos></cursos>
+
 </div>
