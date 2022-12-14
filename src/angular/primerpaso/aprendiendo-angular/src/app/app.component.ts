@@ -10,10 +10,12 @@ export class AppComponent {
   public title = 'Aprendiendo en Angular :D'; //funciona como los h1,2,3.... etc
   public mostrar_juegos: boolean = true;
   public descripcion: string ;
+  public config;
 
   constructor(){
     this.title = Configuracion.titulo;
     this.descripcion = Configuracion.descripcion;
+    this.config = Configuracion;
   }
 
   ocultarJuegos(value: any){
