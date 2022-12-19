@@ -17,18 +17,18 @@ DoCheck,OnDestroy{
     this.titulo = "Un componente de videojuegos";
 
     this.listado = "Titulo de listados";
-    console.log("Se ha cargado este componente de videojuegos");
+    // console.log("Se ha cargado este componente de videojuegos");
 
   }
 
   //Ese OnInit es simplemente una interfaz. Un «contrato» que obliga a cumplir una cierta estructura (en este caso, incluir el método ngOnInit()) a la clase que lo implementa.
   ngOnInit(){
-    console.log('OnInit Corriendo!');
+    // console.log('OnInit Corriendo!');
   }
 
   //Sirve para detectar y actuar sobre cambios que Angular no va a detectar por si mismo. Se llama también durante cada ciclo de detección de cambios, después de ngOnChanges().
   ngDoCheck(){
-    console.log('DoCheck Corriendo!');
+    // console.log('DoCheck Corriendo!');
   }
   cambiarTitulo(){
     this.titulo = "Nuevo titulazo";
@@ -36,7 +36,7 @@ DoCheck,OnDestroy{
 
   //Se llama solo una vez, justo antes de que Angular destruya el componente, y sirve para prevenir memory leaks, eliminando por ejemplo suscripciones a Observables e event handlers.
   ngOnDestroy(){
-    console.log("OnDestroy exploto y erradico un componente");
+    // console.log("OnDestroy exploto y erradico un componente");
 
   }
 }

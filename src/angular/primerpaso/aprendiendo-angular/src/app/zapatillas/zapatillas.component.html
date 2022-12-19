@@ -1,6 +1,10 @@
 <h2>{{titulo}}</h2>
 <ul>
-  <li>Jordan</li>
-  <li>Addidas</li>
-  <li>Vans</li>
+  <li *ngFor="let deportiva of zapatillas">
+    {{deportiva.nombre}} - <strong>{{deportiva.precio}}</strong>
+
+    <span *ngIf="deportiva.precio <= 100"
+    [style.background]="deportiva.precio < 100 ? 'green' : 'transparent' "
+    [style.color]="deportiva.precio < 100 ? 'white' : 'black' " > !En una Ganga¡</span>
+  </li>
 </ul>
