@@ -13,22 +13,28 @@ implements OnInit{
   public marcas: string[];
 
   constructor(){
+    this.marcas = new Array();
     this.zapatillas=[
       new Zapatilla('Reebox clasicones', 'Reebox', 'Blanco', 70, true),
       new Zapatilla('Mike Walker TP', 'Mike', 'Negro', 180, true),
       new Zapatilla('Addudas 3', 'Addudas', 'Blanco', 90, false),
-      new Zapatilla('Panss Skate 3', 'Panss', 'Blue', 120, true)
+      new Zapatilla('Panss Skate 3', 'Panss', 'Blue', 120, true),
+      new Zapatilla('Panss Skate 4', 'Panss', 'Red', 120, true)
     ];
   }
 
   ngOnInit(){
     console.log(this.zapatillas);
-    this.marcas();
+    this.getMarcas();
   }
 
-  marcas(){
+  getMarcas(){
     this.zapatillas.forEach((zapatilla, index) => {
-      marcas.push(zapatilla.marca);
+
+      if(this.marcas.indexOf(zapatilla.marca) < 0){
+        this.marcas.push(zapatilla.marca);
+      }
+
       console.log(index);
     });
 
