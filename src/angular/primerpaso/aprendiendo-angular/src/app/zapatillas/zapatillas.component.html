@@ -1,7 +1,12 @@
 <h2>{{titulo}}</h2>
+
+<p>Añadir mas zapas guapas</p>
+<input type="text" [(ngModel]="name">
+
+
 <p>Compra las mejores zapas del mercado!!!</p>
 <ul>
-  <li *ngFor="let marca of marcas">{{marca}}</li>
+  <li *ngFor="let marca of marcas; let indice = index">{{indice +' - '+marca}}</li>
 </ul>
 
 <hr>
@@ -9,11 +14,35 @@
 <p>Las Zapatillas/Deportivas/Tennis son las siguientes:</p>
 <ul>
   <li *ngFor="let deportiva of zapatillas">
-    <div *ngIf="deportiva.stock">
-      {{deportiva.nombre}} - <strong>{{deportiva.precio}}</strong>
+
+     <span [ngStyle]="{
+      'text-decoration' : !deportiva.stock ? 'line-throught' : 'none'
+     }">{{deportiva.nombre}} - <strong>{{deportiva.precio}}</strong></span>
+
       <span *ngIf="deportiva.precio <= 100"
       [style.background]="deportiva.precio < 100 ? 'green' : 'transparent' "
-      [style.color]="deportiva.precio < 100 ? 'white' : 'black' " > !En una Ganga¡</span>
-    </div>
+      [style.color]="deportiva.precio < 100 ? 'white' : 'black' "
+      > !En una Ganga¡</span>
+
   </li>
+</ul>
+
+<p>El color de la mayoria de nuestras zapas son: </p>
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="'yellow'">
+  El color que hay mas es el <span [ngStyle]="{'background' : color}">amarrillo :D.</span>
+  </li>
+
+  <li *ngSwitchCase="'red'">
+  El color que hay mas es el<span [ngStyle]="{'background' : color}">rojo :D.</span>  :D.
+  </li>
+
+  <li *ngSwitchCase="'blue'">
+  El color que hay mas es el<span [ngStyle]="{'background' : color}">azul :D.</span> :D.
+  </li>
+
+  <li *ngSwitchCase="'orange'">
+  El color que hay mas es el<span [ngStyle]="{'background' : color}">naranja :D.</span>  :D.
+  </li>
+
 </ul>

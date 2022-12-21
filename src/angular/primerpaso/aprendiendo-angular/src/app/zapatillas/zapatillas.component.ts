@@ -11,12 +11,16 @@ implements OnInit{
   public titulo: string = 'Componente de zapatillas/tennis';
   public zapatillas: Array<Zapatilla>;
   public marcas: string[];
+  public color: string;
 
   constructor(){
+    this.color = 'yellow';
     this.marcas = new Array();
     this.zapatillas=[
       new Zapatilla('Reebox clasicones', 'Reebox', 'Blanco', 70, true),
       new Zapatilla('Mike Walker TP', 'Mike', 'Negro', 180, true),
+      new Zapatilla('Mike Walker TP 2', 'Mike', 'Negro', 180, true),
+      new Zapatilla('Mike Walker TP 3', 'Mike', 'Negro', 180, false),
       new Zapatilla('Addudas 3', 'Addudas', 'Blanco', 90, false),
       new Zapatilla('Panss Skate 3', 'Panss', 'Blue', 120, true),
       new Zapatilla('Panss Skate 4', 'Panss', 'Red', 120, true)
@@ -33,10 +37,10 @@ implements OnInit{
 
       if(this.marcas.indexOf(zapatilla.marca) < 0){
         this.marcas.push(zapatilla.marca);
+        console.log(index);
       }
-
-      console.log(index);
     });
+    console.log(this.marcas)
 
     console.log(this.marcas);
 
