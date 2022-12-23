@@ -12,8 +12,10 @@ implements OnInit{
   public zapatillas: Array<Zapatilla>;
   public marcas: string[];
   public color: string;
+  public mi_marca: string;
 
   constructor(){
+    this.mi_marca = "FILA"
     this.color = 'yellow';
     this.marcas = new Array();
     this.zapatillas=[
@@ -40,9 +42,17 @@ implements OnInit{
         console.log(index);
       }
     });
-    console.log(this.marcas)
+  }
 
-    console.log(this.marcas);
+  getMarca(){
+    alert(this.mi_marca);
+  }
+  addMarca(){
+    this.marcas.push(this.mi_marca);
+  }
+
+  //Eventos en angular
+  borrarMarca(index){
 
   }
 

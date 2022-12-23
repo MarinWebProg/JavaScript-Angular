@@ -1,12 +1,26 @@
 <h2>{{titulo}}</h2>
 
+<hr>
 <p>Añadir mas zapas guapas</p>
-<input type="text" [(ngModel]="name">
+<p>
 
+  <input type="text" [(ngModel)]="mi_marca"/>
+  <button (click)="getMarca()">Mostrar Marca</button>
+  <button (click)="addMarca()">Añadir Marca</button>
+
+</p>
+<strong>
+  <p>{{mi_marca}}</p>
+</strong>
+
+<hr>
 
 <p>Compra las mejores zapas del mercado!!!</p>
 <ul>
-  <li *ngFor="let marca of marcas; let indice = index">{{indice +' - '+marca}}</li>
+  <li *ngFor="let marca of marcas; let indice = index">
+    {{indice +' - '+marca}}
+    <button (click)="borrarMarcar(indice)">BORRAR ALCH!!!</button>
+  </li>
 </ul>
 
 <hr>
@@ -28,21 +42,22 @@
 </ul>
 
 <p>El color de la mayoria de nuestras zapas son: </p>
+<input type="text" [(ngModel)]="color">
 <ul [ngSwitch]="color">
   <li *ngSwitchCase="'yellow'">
   El color que hay mas es el <span [ngStyle]="{'background' : color}">amarrillo :D.</span>
   </li>
 
   <li *ngSwitchCase="'red'">
-  El color que hay mas es el<span [ngStyle]="{'background' : color}">rojo :D.</span>  :D.
+  El color que hay mas es el<span [ngStyle]="{'background' : color}">rojo :D.</span>
   </li>
 
   <li *ngSwitchCase="'blue'">
-  El color que hay mas es el<span [ngStyle]="{'background' : color}">azul :D.</span> :D.
+  El color que hay mas es el<span [ngStyle]="{'background' : color}">azul :D.</span>
   </li>
 
   <li *ngSwitchCase="'orange'">
-  El color que hay mas es el<span [ngStyle]="{'background' : color}">naranja :D.</span>  :D.
+  El color que hay mas es el<span [ngStyle]="{'background' : color}">naranja :D.</span>
   </li>
 
 </ul>
