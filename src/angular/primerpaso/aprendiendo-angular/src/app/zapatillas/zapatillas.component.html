@@ -4,7 +4,7 @@
 <p>Añadir mas zapas guapas</p>
 <p>
 
-  <input type="text" [(ngModel)]="mi_marca"/>
+  <input type="text" [(ngModel)]="mi_marca" (blur)="onBlur()" (keyup.enter)="mostrarPalabra()"/>
   <button (click)="getMarca()">Mostrar Marca</button>
   <button (click)="addMarca()">Añadir Marca</button>
 
@@ -19,7 +19,7 @@
 <ul>
   <li *ngFor="let marca of marcas; let indice = index">
     {{indice +' - '+marca}}
-    <button (click)="borrarMarcar(indice)">BORRAR ALCH!!!</button>
+    <button (click)="borrarMarca(indice)">BORRAR ALCH!!!</button>
   </li>
 </ul>
 
@@ -36,6 +36,7 @@
       <span *ngIf="deportiva.precio <= 100"
       [style.background]="deportiva.precio < 100 ? 'green' : 'transparent' "
       [style.color]="deportiva.precio < 100 ? 'white' : 'black' "
+      [class.altoPrecio]="deportiva.precio >= 100"
       > !En una Ganga¡</span>
 
   </li>

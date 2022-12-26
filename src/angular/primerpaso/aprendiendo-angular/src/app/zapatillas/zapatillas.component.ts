@@ -52,8 +52,17 @@ implements OnInit{
   }
 
   //Eventos en angular
-  borrarMarca(index){
+  borrarMarca(index: number){
+    //delete this.marcas[indice];
+    this.marcas.splice(index,1)
+  }
 
+  onBlur(){
+    console.log("Tas afuera del input padrinoooo")
+  }
+
+  mostrarPalabra(){
+    alert(this.mi_marca);
   }
 
 }
