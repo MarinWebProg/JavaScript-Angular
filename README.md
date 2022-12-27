@@ -20,4 +20,4 @@ Secciones     | Completadas
 38 - 44       | Completo -- TypeScript
 45 - 47       | Completo -- Inicio Angular
 48 - 50       | Completo -- Clases y Modelos, Directivas Estructurales, Enlace de datos - Data Binding en Angular
-51 - ??       | En Progreso -- Eventos en Angular, Directiva ngClass de Angular,
+51 - ??       | En Progreso -- Eventos en Angular, Directiva ngClass de Angular, Paginas y rutas en Angular

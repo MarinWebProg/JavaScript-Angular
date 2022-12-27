@@ -31,12 +31,17 @@
 
      <span [ngStyle]="{
       'text-decoration' : !deportiva.stock ? 'line-throught' : 'none'
-     }">{{deportiva.nombre}} - <strong>{{deportiva.precio}}</strong></span>
+     }">{{deportiva.nombre}} -
+     <strong [class.altoPrecio]="deportiva.precio >= 100"
+      [ngClass]="{
+        'fondoRojo' : deportiva.precio > 100,
+        'subrayado': deportiva.marca == 'Mike' }"
+        > {{deportiva.precio}} </strong> <!--Tambien este se puede usar ----- > [ngClass]="['fondoRojo', 'subrayado']" ,  class="fondoRojo subrayado" -->
+    </span>
 
       <span *ngIf="deportiva.precio <= 100"
       [style.background]="deportiva.precio < 100 ? 'green' : 'transparent' "
       [style.color]="deportiva.precio < 100 ? 'white' : 'black' "
-      [class.altoPrecio]="deportiva.precio >= 100"
       > !En una Ganga¡</span>
 
   </li>

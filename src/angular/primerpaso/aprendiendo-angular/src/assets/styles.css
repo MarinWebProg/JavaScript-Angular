@@ -1,0 +1,12 @@
+.altoPrecio{
+  color: grey;
+  font-size: 30px !important;
+}
+
+/* con el ngClass */
+.fondoRojo{
+  background: red;
+}
+.subrayado{
+  text-decoration: underline;
+}

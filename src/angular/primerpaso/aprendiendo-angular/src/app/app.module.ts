@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [		//Es el apartado que carga los componentes(IMPORTANTE!!! -- siempre subir el componente creado)
+  declarations: [			//Es el apartado que carga los componentes(IMPORTANTE!!! -- siempre subir el componente creado)
     AppComponent,
       VideojuegoComponent,
       ZapatillasComponent,
       CursosComponent,
+      HomeComponent
    ],
   imports: [
     BrowserModule,
