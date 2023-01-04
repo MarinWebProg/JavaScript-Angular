@@ -8,12 +8,24 @@
 
   <h2>{{descripcion}}</h2>
 
+  <!-- Menu de navegacion -->
+  <nav>
+    <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a>
+    &nbsp;
+    <a [routerLink]="['/zapatillas']" [routerLinkActive]="['active']">Zapatillas</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']" [routerLinkActive]="['active']">Cursos</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']" [routerLinkActive]="['active']">VideoJuego</a>
+    &nbsp;
+  </nav>
+<hr>
   <!-- <button (click)="ocultarJuegos(false)" *ngIf="mostrar_juegos">Oculto eoe</button>
   <button (click)="ocultarJuegos(true)" *ngIf="!mostrar_juegos">NO Oculto eoe</button>
 
   <videojuego *ngIf="mostrar_juegos"></videojuego> Aqui esta mi primer componente creado-->
   <!--<cursos></cursos> -->
-   <zapatillas></zapatillas>
-
+   <!-- <zapatillas></zapatillas> -->
+  <router-outlet></router-outlet>
 
 </div>

@@ -1,2 +1,7 @@
 <h1>{{titulo}}</h1>
-<p>Pues si funciona jaja</p>
+
+<hr>
+<button (click)="redirigir()" >LLevame a los tennis!!</button>
+
+<h3 *ngIf="nombre">Bienvenido {{nombre}}</h3>
+<h3 *ngIf="followers">Los que te siguen weon son :{{followers}}</h3>
