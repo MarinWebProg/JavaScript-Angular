@@ -26,6 +26,11 @@ ngOnInit(){
     //console.log(typeof +params['followers']);
     this.nombre = params['nombre'];
     this.followers = +params['followers'];
+
+    if(this.nombre == 'ninguno'){
+      this._router.navigate(['/home']);
+    }
+
   });
 }//ngOnInit
 
