@@ -18,8 +18,13 @@ constructor() {
     new Zapatilla('Panss Skate 4', 'Panss', 'Red', 120, true)
   ];
 }
-  getZapatillas(){
 
+  getTexto(){
+    return "Hola mundo desde un servicios"
+  }
+
+  getZapatillas(): Array<Zapatilla> {
+    return this.zapatillas;
   }
 
 }
