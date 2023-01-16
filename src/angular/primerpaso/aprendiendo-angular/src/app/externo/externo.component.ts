@@ -14,6 +14,7 @@ import { PeticionesService } from '../service/peticiones.service';
 export class ExternoComponent  implements OnInit{
   public user: any;
   public userId: any;
+  public fecha: any;
 
 
   constructor(
@@ -24,9 +25,11 @@ export class ExternoComponent  implements OnInit{
 
   ngOnInit() {
     this.cargaUsuario();
+    this.fecha = new Date();
   }
 
   cargaUsuario(){
+    this.user = false;
     this._peticionesService.getUser(this.userId).subscribe(
       result => {
         console.log(result);
