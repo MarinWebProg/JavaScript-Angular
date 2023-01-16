@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 //Servicios
 import { PeticionesService } from '../service/peticiones.service';
-import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-externo',
@@ -25,6 +25,7 @@ export class ExternoComponent  implements OnInit{
   ngOnInit() {
     this.cargaUsuario();
   }
+
   cargaUsuario(){
     this._peticionesService.getUser(this.userId).subscribe(
       result => {
