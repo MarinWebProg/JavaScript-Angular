@@ -5,6 +5,7 @@ Curso de Máster en JavaScript
 de udemy.
 *Puede ir cambiando donde me quede*
 
+## Secciones del cursos (Progresa)
 ## Progreso JS
 Secciones     | Completadas
 ------------- | -------------
