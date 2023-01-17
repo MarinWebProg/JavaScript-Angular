@@ -6,7 +6,7 @@ de udemy.
 *Puede ir cambiando donde me quede*
 
 ## Secciones del cursos (Progresa)
-## Progreso JS
+# Progreso JS
 Secciones     | Completadas
 ------------- | -------------
 1-23          | Completadas
@@ -15,7 +15,7 @@ Secciones     | Completadas
 34-37         | Completado
 # -------- Finalizado --------
 
-## TypeScript - Angular
+# TypeScript - Angular
 Secciones     | Completadas
 ------------- | -------------
 38 - 44       | Completo -- TypeScript
