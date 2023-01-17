@@ -1,0 +1,22 @@
+<h2>FORMULARIOS</h2>
+
+<form #formContacto="ngForm" (ngSubmit)="onSubmit()">
+  <label for="nombre">Nombre:</label> <br>
+  <input type="text" name="nombre" #nombre = "ngModel" [(ngModel)]="usuario.nombre"
+  required/> <span *ngIf="!nombre.valid">El nombre es ley </span><br>
+
+  <label for="apellidos">Apellidos:</label><br>
+  <input type="text" name="apellidos" #apellidos = "ngModel" [(ngModel)]="usuario.apellidos"
+  required/><br>
+
+  <label for="email">Email:</label><br>
+  <input type="text" name="email" #email = "ngModel" [(ngModel)]="usuario.email"
+  required/><br>
+
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea type="text" name="mensaje" #mensaje = "ngModel" [(ngModel)]="usuario.mensaje"
+  required></textarea><br>
+
+  <input type="submit" value="Enviar">
+
+</form>

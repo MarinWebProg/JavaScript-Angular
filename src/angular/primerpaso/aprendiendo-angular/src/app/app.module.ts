@@ -11,6 +11,10 @@ import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
 import { ExternoComponent } from './externo/externo.component';
 
+//Pipes
+import { CaluladoraPipe } from './pipes/calculadora.pipe';
+import { ContactoComponent } from './contacto/contacto.component';
+
 @NgModule({
   declarations: [			//Es el apartado que carga los componentes(IMPORTANTE!!! -- siempre subir el componente creado)
     AppComponent,
@@ -19,6 +23,8 @@ import { ExternoComponent } from './externo/externo.component';
       CursosComponent,
       HomeComponent,
       ExternoComponent,
+      CaluladoraPipe,
+      ContactoComponent,
    ],
   imports: [
     BrowserModule,

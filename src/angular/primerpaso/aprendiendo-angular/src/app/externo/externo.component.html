@@ -1,7 +1,10 @@
 <hr>
 {{fecha | date:'dd/MM/yy'}} <br>
-{{fecha | date:'fullDate'}}
-
+{{fecha | date:'fullDate' | uppercase}} <br>
+{{'ESTO ES UNA PRUEBA DE PIPE QUE LO PASA A MINUSCULAS' | lowercase}}
+{{4 | calculadora:2}}
+<!-- Para usar una pipe debemos usar el = |-->
+<!-- Para generar una pipe seria : ng g p nombreDelPipe -->
 <hr>
 <input type="text" [(ngModel)]="userId" (keyup.enter)="cargaUsuario()"/>
 <div *ngIf="!user">
