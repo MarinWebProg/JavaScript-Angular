@@ -1,22 +1,24 @@
 <h2>FORMULARIOS</h2>
 
-<form #formContacto="ngForm" (ngSubmit)="onSubmit()">
+<form #formContacto="ngForm" (ngSubmit)="onSubmit(formContacto)">
   <label for="nombre">Nombre:</label> <br>
   <input type="text" name="nombre" #nombre = "ngModel" [(ngModel)]="usuario.nombre"
-  required/> <span *ngIf="!nombre.valid">El nombre es ley </span><br>
+  required pattern="[a-zA-Z-' ']+"/> <span *ngIf="nombre.touched && !nombre.valid">El nombre es ley </span><br>
 
   <label for="apellidos">Apellidos:</label><br>
   <input type="text" name="apellidos" #apellidos = "ngModel" [(ngModel)]="usuario.apellidos"
-  required/><br>
+  required pattern="[a-zA-Z-' ']+"/> <span *ngIf="apellidos.touched && !apellidos.valid">Los apellidos son ley </span><br>
 
   <label for="email">Email:</label><br>
-  <input type="text" name="email" #email = "ngModel" [(ngModel)]="usuario.email"
-  required/><br>
+  <input type="email" name="email" #email = "ngModel" [(ngModel)]="usuario.email"
+  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/> <span *ngIf="email.touched && !email.valid">El email es ley si lo escribes bien</span><br>
 
   <label for="mensaje">Mensaje:</label><br>
   <textarea type="text" name="mensaje" #mensaje = "ngModel" [(ngModel)]="usuario.mensaje"
-  required></textarea><br>
+  required> </textarea>
+  <span *ngIf="apellidos.touched && !apellidos.valid">El mensaje es ley</span>
+  <br>
 
-  <input type="submit" value="Enviar">
+  <input type="submit" value="Enviar" [disabled]="!formContacto.form.valid">
 
 </form>
