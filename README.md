@@ -5,17 +5,17 @@ Curso de Máster en JavaScript
 de udemy.
 *Puede ir cambiando donde me quede*
 
-## Secciones del cursos (Progresa)
-# Progreso JS
+# Secciones del cursos (Progresa)
+## Progreso JS
 Secciones     | Completadas
 ------------- | -------------
 1-23          | Completadas
 24-26         | Completadas
 27-33         | Completadas
 34-37         | Completado
-# -------- Finalizado --------
+## -------- Finalizado --------
 
-# TypeScript - Angular
+## TypeScript - Angular
 Secciones     | Completadas
 ------------- | -------------
 38 - 44       | Completo -- TypeScript
@@ -25,13 +25,18 @@ Secciones     | Completadas
 
 
 
-## Comandos
-#### Para inciar proyecto:
+# Comandos
+## Para inciar proyecto:
+```bash
 ng serve
+```
 
-#### Para generar componentes es:
+## Para generar componentes es:
+```bash
 ng g component [Nombre del componente]
+```
 
-#### Para generar componentes y saltar los tests:
+## Para generar componentes y saltar los tests:
+```bash
 ng g component [Nombre del componente] --skip-tests
-
+```
